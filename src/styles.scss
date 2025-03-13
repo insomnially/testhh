@@ -1,0 +1,159 @@
+body {
+    font-family: Neue;
+    background: #181717;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  * {
+    font-family: Neue;
+  }
+
+  @font-face {
+    font-family: Neue;
+    src: url(./assets/PPNeueMachina-Regular.a743938e.otf);
+  }
+  
+  .container {
+    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table {
+    border-spacing: 25px !important;
+  }
+
+  tbody tr {
+    transition: all .3s;
+    cursor: pointer;
+    &:hover {
+        color: rgb(145, 144, 144);
+    }
+  }
+  
+  .table th, .table td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    font-size: 25px;
+    font-weight: lighter;
+  }
+  .table th {
+    font-weight: lighter;
+    font-size: 2rem;
+  }
+  
+  .table td {
+    font-size: 2rem;
+  }
+  
+  .positive {
+    color: green;
+  }
+  
+  .negative {
+    color: red;
+  }
+
+  .modal {
+    background: rgb(53, 53, 53);
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 10px;
+  }
+  
+  .crypto-list {
+    display: flex;
+    flex-direction: column;
+    max-height: 250px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+  }
+  
+  .ReactModal__Overlay.ReactModal__Overlay--after-open {
+    background-color: rgba(20, 20, 20, 0.507) !important;
+  }
+  .crypto-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover{
+    background-color: #535252;
+    }
+  }
+  
+  .crypto-item.selected {
+    background-color: #023d7c;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  
+  .add-button {
+    background: rgb(230, 55, 55);
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .5s;
+    &:hover {
+        box-shadow: 0 5px 10px rgb(39, 0, 0);
+    }
+  }
+  
+  .formassetform button {
+     border: none;
+     padding: 5px;
+     border-radius: 8px;
+     background-color: rgb(250, 66, 66);
+     color: white;
+     cursor: pointer;
+     transition: all .3s;
+     margin: 5px;
+     &:hover {
+        opacity: .85;
+     }
+  }
+
+  .formassetform {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 70%;
+    flex-direction: column;
+  }
+
+  .formassetform input {
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
